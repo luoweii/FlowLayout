@@ -1,5 +1,6 @@
 package com.luowei.flowlayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this,VDHActivity.class));
             }
         });
 
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void btnonClick(View view) {
+    public void btnOnClick(View view) {
         view.setVisibility(View.GONE);
     }
 }
